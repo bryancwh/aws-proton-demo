@@ -10,6 +10,9 @@ Mappings:
       CIDR: '{{ environment.inputs.subnet_one_cidr}}'
     PublicTwo:
       CIDR: '{{ environment.inputs.subnet_two_cidr}}'
+Parameters:
+  VPCParameter:
+    Type:  AWS::EC2::VPC::Id
 Resources:
   VPC:
     Type: AWS::EC2::VPC
