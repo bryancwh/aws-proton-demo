@@ -5,11 +5,11 @@ schema:
   types:
     PublicEnvironmentInput:
       type: object
-      description: "Input properties for my environment"
+      description: "Input properties for Non-GEN environment"
       properties:
-        vpc_cidr:
+        non_gen_vpc_cidr:
           type: string
-          description: "This CIDR range for your VPC"
+          description: "This specifies CIDR range for your non-GEN VPC"
           default: 10.0.0.0/16
           pattern: ([0-9]{1,3}\.){3}[0-9]{1,3}($|/(16|24))
         subnet_one_cidr:
@@ -22,12 +22,12 @@ schema:
           description: "The CIDR range for subnet two"
           default: 10.0.1.0/24
           pattern: ([0-9]{1,3}\.){3}[0-9]{1,3}($|/(16|24))
-    ManagedEnvironmentInput:
+    PrivateEnvironmentInput:
       type: object
       description: "Input properties for GEN environment"
       properties:
         gen_vpc_id:
           type: string
-          description: "This specifies VPC Id for GEN VPC"
+          description: "This specifies VPC Id for your GEN VPC"
       required:
         - gen_vpc_id
