@@ -42,7 +42,7 @@ Resources:
       MapPublicIpOnLaunch: true
   
   # VPCFlowLog Addition here:
-    VPCFlowLog:
+  VPCFlowLog:
     Type: AWS::EC2::FlowLog
     Properties:
       DeliverLogsPermissionArn: !GetAtt FlowLogRole.Arn
