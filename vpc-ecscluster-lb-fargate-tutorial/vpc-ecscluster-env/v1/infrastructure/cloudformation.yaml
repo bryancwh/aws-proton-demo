@@ -5,7 +5,7 @@ Mappings:
   # The VPC and subnet configuration is passed in via the environment spec.
   SubnetConfig:
     VPC:
-      CIDR: '{{ environment.inputs.vpc_cidr}}'
+      CIDR: '{{ environment.inputs.non_gen_vpc_cidr}}'
     PublicOne:
       CIDR: '{{ environment.inputs.subnet_one_cidr}}'
     PublicTwo:

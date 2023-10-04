@@ -29,5 +29,3 @@ schema:
         gen_vpc_id:
           type: string
           description: "This specifies VPC Id for your GEN VPC"
-      required:
-        - gen_vpc_id
